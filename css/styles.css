@@ -1,0 +1,223 @@
+/* Configuración general */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    background-color: #f1f4f9;
+    color: #252525;
+    line-height: 1.6;
+}
+
+/* Encabezado */
+.logo {
+    background-color: #24b3cc;
+    color: white;
+    text-align: center;
+    padding: 30px 20px;
+    font-size: 30px;
+    font-weight: bold;
+    letter-spacing: 1px;
+}
+
+/* Tarjeta de información personal */
+.sobremi {
+    background-color: white;
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.sobremi h1 {
+    color: #000000;
+    text-align: center;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.sobremi h3 {
+    color: #333;
+    margin-top: 15px;
+    margin-bottom: 8px;
+}
+
+.sobremi p {
+    font-size: 17px;
+    margin-bottom: 15px;
+    text-align: justify;
+}
+
+/* Etiquetas, número y selector */
+label {
+    display: block;
+    margin-top: 15px;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+input,
+select {
+    width: 100%;
+    max-width: 400px;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+    background-color: white;
+}
+
+input:focus,
+select:focus {
+    outline: 2px solid #60a5fa;
+    border-color: #2563eb;
+}
+
+#mensaje {
+    margin-top: 15px;
+    font-weight: bold;
+    color: #172554;
+}
+
+/* Tarjeta para seleccionar una pasión */
+.pasiones {
+    background-color: white;
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 35px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.pasiones h2 {
+    color: #172554;
+    font-size: 30px;
+    margin-bottom: 10px;
+}
+
+.pasiones h3 {
+    color: #172554;
+    margin-top: 20px;
+}
+
+.pasiones p {
+    font-size: 17px;
+    margin-top: 12px;
+    margin-bottom: 12px;
+}
+
+/* Imagen fija que aparece siempre al abrir la página */
+.imagen-fija {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}
+
+/* Imagen que cambia según la pasión elegida */
+#imagen {
+    display: block;
+    width: 100%;
+    max-width: 450px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 10px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+}
+
+/* Ocultar la imagen variable cuando no hay una pasión seleccionada */
+#imagen[hidden] {
+    display: none;
+}
+
+/* Botón del profesor */
+button {
+    background-color: #2563eb;
+    color: white;
+    padding: 12px 22px;
+    margin-top: 12px;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #1d4ed8;
+}
+
+/* Tarjeta del mensaje para el profesor */
+.mensaje-profesor {
+    background-color: #dbeafe;
+    max-width: 1000px;
+    margin: 35px auto;
+    padding: 30px;
+    text-align: center;
+    border-radius: 12px;
+}
+
+.mensaje-profesor h2 {
+    color: #0a0a0a;
+    margin-bottom: 10px;
+}
+
+/* Pie de página */
+.pie-pagina {
+    background-color: #1f8ccc;
+    color: white;
+    text-align: center;
+    padding: 25px;
+    margin-top: 40px;
+}
+
+.pie-pagina p {
+    margin: 5px 0;
+}
+
+/* Adaptación para celulares */
+@media (max-width: 768px) {
+
+    .logo {
+        font-size: 23px;
+        padding: 25px 15px;
+    }
+
+    .sobremi,
+    .pasiones,
+    .mensaje-profesor {
+        margin: 20px 12px;
+        padding: 22px;
+    }
+
+    .sobremi h1 {
+        font-size: 27px;
+    }
+
+    .pasiones h2 {
+        font-size: 24px;
+    }
+
+    input,
+    select {
+        max-width: 100%;
+    }
+
+    .imagen-fija,
+    #imagen {
+        height: 230px;
+    }
+}
